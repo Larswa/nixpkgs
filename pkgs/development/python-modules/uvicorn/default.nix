@@ -16,7 +16,7 @@
 
 buildPythonPackage rec {
   pname = "uvicorn";
-  version = "0.40.0";
+  version = "0.46.0";
   pyproject = true;
 
   src = fetchFromGitHub {
