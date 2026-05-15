@@ -71,6 +71,9 @@ buildPythonPackage {
   disabledTests = lib.optionals (pythonAtLeast "3.14") [
     #  AssertionError: assert '(?s:foo[^/]*)\\z' == '(?s:foo[^/]*)\\Z'
     "test_glob_to_re"
+    #  TypeError: byte_compile() got an unexpected keyword argument 'dry_run'
+    "test_byte_compile"
+    "test_byte_compile_optimized"
   ];
 
   meta = {
