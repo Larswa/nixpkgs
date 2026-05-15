@@ -32,7 +32,7 @@ buildPythonPackage rec {
   build-system = [
     setuptools
   ]
-  ++ lib.optionals (withMypyc) [
+  ++ lib.optionals withMypyc [
     ast-serialize
     mypy
   ];
