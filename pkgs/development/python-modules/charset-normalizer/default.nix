@@ -37,7 +37,7 @@ buildPythonPackage rec {
     mypy
   ];
 
-  env.CHARSET_NORMALIZER_USE_MYPYC = lib.optionalString (withMypyc) "1";
+  env.CHARSET_NORMALIZER_USE_MYPYC = lib.optionalString withMypyc "1";
 
   nativeCheckInputs = [ pytestCheckHook ];
 
