@@ -10,7 +10,7 @@
   pillow,
   pytestCheckHook,
   reportlab,
-  setuptools,
+  setuptools_81,
   webcolors,
 }:
 
@@ -48,14 +48,14 @@ buildPythonPackage rec {
     # note: this is a postPatch as `seqdiag` uses them directly
   '';
 
-  build-system = [ setuptools ];
+  build-system = [ setuptools_81 ];
 
   dependencies = [
     docutils
     funcparserlib
     pillow
     reportlab
-    setuptools
+    setuptools_81
     webcolors
   ];
 
