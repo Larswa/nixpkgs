@@ -4,7 +4,7 @@
   fetchFromGitHub,
 
   # build-system
-  setuptools,
+  setuptools_81,
 
   # dependencies
   apsw,
@@ -28,7 +28,7 @@ buildPythonPackage (finalAttrs: {
   };
 
   build-system = [
-    setuptools
+    setuptools_81
   ];
 
   dependencies = [
